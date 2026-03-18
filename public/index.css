@@ -1,0 +1,125 @@
+body, main {
+    margin: 0 auto;
+    width: 600px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-image: url("/assets/worldmap.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url("/assets/parrot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 143px;
+}
+
+.head-container>h1, .head-container>h2 {
+    margin: 0;
+}
+
+.head-container>h1 {
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 60px;
+    color: #32CD32;
+}
+
+.head-container>h2 {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+main, .border {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    
+main {
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    height: 700px;
+    background-color: white;
+}
+
+.border {
+    height: 600px;
+    width: 530px;
+    background-color: transparent;
+    border: 5px solid black;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+
+.border>p {
+    color: #035A9D;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.border>textarea {
+    background-color: #EFF0F4;
+    border: none;
+    border-radius: 10px;
+    height: 150px;
+    width: 85%;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+    resize: none;
+}
+
+.language-container, .language {
+    display: flex;
+}
+
+.language-container {
+    flex-direction: column;
+    align-items: start;
+    width: 85%;
+}
+
+.language {
+    font-size: 24px;
+    font-weight: 800;
+    padding: 5px 10px;
+    align-items: center;
+    width: 220px;
+    gap: 15px;
+}
+
+.language>input {
+    transform: scale(1.25);
+}
+
+.language>img {
+    border: 1px solid #999999;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #035A9D;
+    padding: 10px 0;
+    width: 85%;
+    font-size: 36px;
+    font-weight: 900;
+}
