@@ -1,18 +1,18 @@
 {
-  "name": "",
+  "name": "Solo_Translation_App",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev-start-server": "cd server && nodemon -e js,html,css",
-    "dev-start-client": "cd public && http-server -c-1",
+    "dev-start-client": "vite",
     "dev": "concurrently \"npm run dev-start-server\" \"npm run dev-start-client\""
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "http-server": "^14.1.1"
+    "express": "^4.19.2"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "vite": "^8.0.0"
   }
 }

@@ -8,10 +8,14 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Example route
-// app.get('/api/hello', (req, res) => { ... });
+app.post("/api/translate", (req, res) => {
+
+    console.log("got Here to the server", req.body)
+
+    res.status(200).send(JSON.stringify({request: req.body}))
+})
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on http://localhost:${port}`);
 });

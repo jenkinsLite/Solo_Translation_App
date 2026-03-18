@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: url("/assets/worldmap.png");
+    background-image: url("/worldmap.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-    background-image: url("/assets/parrot.png");
+    background-image: url("/parrot.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ main {
     border: 1px solid #999999;
 }
 
-button {
+.translate-btn {
     color: white;
     border: none;
     border-radius: 10px;
