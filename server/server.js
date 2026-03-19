@@ -48,7 +48,7 @@ app.post("/api/translate", async (req, res) => {
 
 if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    res.sendFile(path.join(import.meta.dirname, 'dist', 'index.html'));
   });
 }
 
