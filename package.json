@@ -8,7 +8,7 @@
     "dev-start-server": "cd server && nodemon -e js,html,css --env-file=.env server.js",
     "dev-start-client": "npm run build && vite",
     "dev": "concurrently \"npm run dev-start-server\" \"npm run dev-start-client\"",
-    "prod": "npm run build && cd server && node server.jg" 
+    "prod": "cd server && node server.jg"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "vite": "^8.0.0"
+    "vite": "^8.0.1"
   }
 }
