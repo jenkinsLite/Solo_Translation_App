@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
 app.use(express.static(path.join(import.meta.dirname, 'dist')));
 
 const openai = new OpenAI({
@@ -54,5 +53,5 @@ if (process.env.NODE_ENV === 'production') {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on port: ${port}`);
 });

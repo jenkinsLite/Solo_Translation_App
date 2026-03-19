@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   root: './',
+  build: { outDir: 'server/dist' },
+  base: '/',
   server: {
     proxy: {
       '/api': {
