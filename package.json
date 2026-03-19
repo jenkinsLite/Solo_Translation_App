@@ -2,8 +2,9 @@
   "name": "Solo_Translation_App",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev-start-server": "cd server && nodemon -e js,html,css",
+    "dev-start-server": "cd server && nodemon -e js,html,css --env-file=.env server.js",
     "dev-start-client": "vite",
     "dev": "concurrently \"npm run dev-start-server\" \"npm run dev-start-client\""
   },
