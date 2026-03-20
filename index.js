@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify'
+
 const inputTxt = document.querySelector(".input-txt")
 const selectTranslation = document.querySelector(".select-translation")
 const translateBtn = document.querySelector(".translate-btn")
@@ -32,10 +34,12 @@ translateBtn.addEventListener("click", async () => {
             if (!response.ok) {
                 console.log("!response.ok. response is: ", response)
             }
+
             const data = await response.json()
+            const cleanData = DOMPurify.sanitize(data.request)
 
             selectTranslation.textContent = "Your translation \u{1F447}"
-            languageContainer.innerHTML = `<textarea type="text" class="output-txt">${data.request}</textarea>`
+            languageContainer.innerHTML = `<textarea type="text" class="output-txt">${cleanData}</textarea>`
             translateBtn.disabled = false
             translateBtn.textContent = "Start Over"
             translateBtn.classList.remove("translate")
